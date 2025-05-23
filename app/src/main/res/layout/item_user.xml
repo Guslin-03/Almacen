@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="?attr/selectableItemBackground">
+
+        <!-- Imagen circular con margen -->
+        <ImageView
+            android:id="@+id/fotoPerfilImageView"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:contentDescription="@string/foto_perfil"
+            android:scaleType="centerCrop"
+            android:src="@drawable/user1"
+            android:background="@drawable/circle_background"
+            android:padding="2dp"/>
+
+        <!-- Contenedor de texto -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nombreTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold"
+                tools:text="Juan Pérez"/>
+
+            <!-- Indicador de admin (solo visible para admins) -->
+            <TextView
+                android:id="@+id/adminBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/badge_admin"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="2dp"
+                android:text="@string/admin"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <!-- Icono de flecha -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/play_arrow"
+            app:tint="@color/secondary_text" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,4 +1,23 @@
 <resources>
     <string name="app_name">Almacen</string>
     <string name="filtrar">Filtrar</string>
+    <string name="foto_perfil">Foto Perfil</string>
+    <string name="usuario_normal">%1$s</string>
+    <string name="usuario_admin">%1$s (Admin)</string>
+    <string name="descripcion_imagen_producto">Imagen del producto</string>
+    <string name="precio_formato">$%.2f</string>
+    <string name="total_inicial">Total: $0.00</string>
+    <string name="total_formato">Total: $%.2f</string>
+    <string name="checkout">Finalizar compra</string>
+    <string name="add_product">Añadir Producto</string>
+    <string name="nombre_producto">Nombre del producto</string>
+    <string name="precio_producto">Precio</string>
+    <string name="preview_imagen_producto">Vista previa de imagen de producto</string>
+    <string name="loading_message">Preparando tu inventario...</string>
+    <string name="app_logo_desc">Logo de la aplicación</string>
+    <string name="app_version">Versión 1.1.2</string>
+    <string name="admin">Admin</string>
+    <string name="ic_user_placeholder">Icono de usuario</string>
+    <string name="ic_chevron_right">Flecha derecha</string>
+    <string name="seleccionar_usuario">Seleccionar Usuario</string>
 </resources>

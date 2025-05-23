@@ -51,8 +51,13 @@ android {
 }
 
 dependencies {
-
-    implementation("androidx.core:core-ktx:1.9.0")
+    implementation ("com.airbnb.android:lottie:6.1.0")
+    implementation ("androidx.appcompat:appcompat:1.6.1")
+    implementation ("com.google.android.material:material:1.9.0")
+    implementation ("androidx.drawerlayout:drawerlayout:1.2.0")
+    implementation ("androidx.activity:activity-ktx:1.6.1")
+    implementation ("androidx.fragment:fragment-ktx:1.5.5")
+    implementation ("androidx.core:core-ktx:1.9.0")
     implementation ("androidx.fragment:fragment-ktx:1.4.0")
     implementation("androidx.activity:activity-compose:1.7.2")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
@@ -61,13 +66,12 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-    implementation("com.google.android.material:material:1.8.0")
     // ADD ROOM
-    val room_version = "2.5.0"
+    //val room_version = "2.5.0"
 
-    implementation("androidx.room:room-runtime:$room_version")
-    implementation("androidx.room:room-ktx:$room_version")
-    kapt("androidx.room:room-compiler:$room_version")
+    //implementation("androidx.room:room-runtime:$room_version")
+    //implementation("androidx.room:room-ktx:$room_version")
+    //kapt("androidx.room:room-compiler:$room_version")
 
     // ADD para utilizar viewmodels
     api("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
