@@ -61,9 +61,10 @@ class AddProductDialog(
 
                 if (nombre.isNotEmpty() && precio > 0 && currentPhotoPath != null) {
                     val nuevoProducto = Product(
-                        id = UUID.randomUUID().toString(),
+                        id = 0,
                         nombre = nombre,
                         imagenUri = currentPhotoPath!!,
+                        habilitado = true,
                         precio = precio
                     )
                     onProductAdded(nuevoProducto)

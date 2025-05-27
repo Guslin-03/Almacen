@@ -227,12 +227,12 @@
 
         private fun inicializarProductos() {
             productos.addAll(listOf(
-                Product("1", "Aceite de Oliva", "android.resource://${packageName}/${R.drawable.aceite_almacen}", 0, 19.99),
-                Product("2", "Atún enlatado", "android.resource://${packageName}/${R.drawable.atun_almacen}", 0, 39.99),
-                Product("3", "Botella de Agua", "android.resource://${packageName}/${R.drawable.botella_agua_almacen}", 0, 59.99),
-                Product("4", "Chorizo", "android.resource://${packageName}/${R.drawable.chorizo_almacen}", 0, 14.99),
-                Product("5", "Huevos", "android.resource://${packageName}/${R.drawable.huevos_almacen}", 0, 12.99),
-                Product("6", "Pan", "android.resource://${packageName}/${R.drawable.pan_almacen}", 0, 9.99)
+                Product(1, "Aceite de Oliva", "android.resource://${packageName}/${R.drawable.aceite_almacen}", true, 0, 19.99),
+                Product(2, "Atún enlatado", "android.resource://${packageName}/${R.drawable.atun_almacen}", true, 0, 39.99),
+                Product(3, "Botella de Agua", "android.resource://${packageName}/${R.drawable.botella_agua_almacen}", true, 0, 59.99),
+                Product(4, "Chorizo", "android.resource://${packageName}/${R.drawable.chorizo_almacen}", true, 0, 14.99),
+                Product(5, "Huevos", "android.resource://${packageName}/${R.drawable.huevos_almacen}", true, 0, 12.99),
+                Product(6, "Pan", "android.resource://${packageName}/${R.drawable.pan_almacen}", true, 0, 9.99)
             ))
         }
 

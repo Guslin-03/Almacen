@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.example.almacen"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.almacen"

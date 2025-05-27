@@ -8,11 +8,11 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.almacen.R
-import com.example.almacen.data.model.Usuario
+import com.example.almacen.data.model.User
 
 class UsuarioAdapter(
-    private val usuarios: List<Usuario>,
-    private val onUsuarioClick: (Usuario) -> Unit
+    private val usuarios: List<User>,
+    private val onUsuarioClick: (User) -> Unit
 ) : RecyclerView.Adapter<UsuarioAdapter.UsuarioViewHolder>() {
 
     inner class UsuarioViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -20,7 +20,7 @@ class UsuarioAdapter(
         private val nombre: TextView = itemView.findViewById(R.id.nombreTextView)
         private val adminBadge: TextView = itemView.findViewById(R.id.adminBadge)
 
-        fun bind(usuario: Usuario) {
+        fun bind(usuario: User) {
             // Configurar imagen de perfil
             fotoPerfil.setImageResource(usuario.fotoPerfil)
 
